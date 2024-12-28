@@ -28,20 +28,20 @@ public class Program2 {
 		for(Department dep : list) {
 			System.out.println(dep);
 		}
-//
+
 		System.out.println("\n===== TEST 4: Seller insert  =====");
 		Department newDepartment= new Department(null, "T.I.");
 		departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New id = " + newDepartment.getId());
-//		
+
 		System.out.println("\n===== TEST 5: Seller update =====");
 		department = departmentDao.findById(5);
 		department.setName("BES");
 		departmentDao.update(department);
 		System.out.println("Update completed!");
-//		
-//		System.out.println("\n===== TEST 6: Seller delete =====");
-//		sellerDao.deleteById(10);
-//		System.out.println("Delete completed!");
+		
+		System.out.println("\n===== TEST 6: Seller delete =====");
+		departmentDao.deleteById(5);
+		System.out.println("Delete completed!");
 	}
 }
