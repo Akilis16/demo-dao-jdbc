@@ -29,10 +29,10 @@ public class Program2 {
 			System.out.println(dep);
 		}
 //
-//		System.out.println("\n===== TEST 4: Seller insert  =====");
-//		Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
-//		sellerDao.insert(newSeller);
-//		System.out.println("Inserted! New id = " + newSeller.getId());
+		System.out.println("\n===== TEST 4: Seller insert  =====");
+		Department newDepartment= new Department(null, "T.I.");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id = " + newDepartment.getId());
 //		
 //		System.out.println("\n===== TEST 5: Seller update =====");
 //		seller = sellerDao.findById(1);
