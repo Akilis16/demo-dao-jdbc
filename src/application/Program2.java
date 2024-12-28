@@ -34,11 +34,11 @@ public class Program2 {
 		departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New id = " + newDepartment.getId());
 //		
-//		System.out.println("\n===== TEST 5: Seller update =====");
-//		seller = sellerDao.findById(1);
-//		seller.setName("Martha Waine");
-//		sellerDao.update(seller);
-//		System.out.println("Update completed!");
+		System.out.println("\n===== TEST 5: Seller update =====");
+		department = departmentDao.findById(5);
+		department.setName("BES");
+		departmentDao.update(department);
+		System.out.println("Update completed!");
 //		
 //		System.out.println("\n===== TEST 6: Seller delete =====");
 //		sellerDao.deleteById(10);
